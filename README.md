@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Zsd2tqY3Y4Zzc0d210b3pudW91ZDNsZ2w5bDV3MmdmYnJ0c204eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/M9gbBd9hCsO5BAPZ8M/giphy.gif" alt="Typing Cat" width="150" align="right">
+<img src="https://media.giphy.com/media/g0748XnY0qfK8/giphy.gif" alt="Shiba Waving" width="150" align="right">
 
 <h1>Hi 👋, I'm Matt</h1>
 <p><b>A Passionate Developer Turning Ideas into Reality</b></p>
@@ -13,7 +13,7 @@
 
 <h3>Connect With Me:</h3>
 <p>
-  <a href="https://www.linkedin.com/in/rahmat-yudi-burhanudin-1a884227b//" target="_blank">
+  <a href="https://www.linkedin.com/in/rahmat-yudi-burhanudin-1a884227b/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="https://discord.com/users/USER_ID_DISCORD_ANDA" target="_blank">
@@ -24,7 +24,7 @@
   </a>
 </p>
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWkxbWN0aHI0aTFjbnJhdnNuczc4Y204Z3lwM2c5aTVxb2g0b3YxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ONuQzM11itmi4/giphy.gif" alt="Walking Cat Divider" width="400"/>
+<img src="https://media.giphy.com/media/LnQjpWaWmgO4QE29NV/giphy.gif" alt="Cute Cat Heart Divider" width="300"/>
 
 <h3>Language and Tools:</h3>
 <h4>Languages</h4>
@@ -58,7 +58,7 @@
 
 <br>
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmMwNnZ3OG05Nnp1ZHFocHh6NTZsdzU5Z2t6azUzb2ZlcTJkY3JhayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xUPGGDNsLvqsjpLWoM/giphy.gif" alt="Waving Kirby" width="100"/>
+<img src="https://media.giphy.com/media/hvRJn3HZWlnw14ed36/giphy.gif" alt="Waving Robot" width="100"/>
 <p><b>Thanks for visiting my profile!</b></p>
 
 </div>
