@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="https://media.giphy.com/media/g0748XnY0qfK8/giphy.gif" alt="Shiba Waving" width="150" align="right">
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTdzd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" alt="Peeking Cat" width="150" align="right">
 
 <h1>Hi 👋, I'm Matt</h1>
 <p><b>A Passionate Developer Turning Ideas into Reality</b></p>
@@ -24,7 +24,7 @@
   </a>
 </p>
 
-<img src="https://media.giphy.com/media/LnQjpWaWmgO4QE29NV/giphy.gif" alt="Cute Cat Heart Divider" width="300"/>
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN292MTkwb2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" alt="Rainbow Line Divider" width="400"/>
 
 <h3>Language and Tools:</h3>
 <h4>Languages</h4>
@@ -58,7 +58,7 @@
 
 <br>
 
-<img src="https://media.giphy.com/media/hvRJn3HZWlnw14ed36/giphy.gif" alt="Waving Robot" width="100"/>
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" alt="Waving Cat" width="100"/>
 <p><b>Thanks for visiting my profile!</b></p>
 
 </div>
