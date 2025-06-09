@@ -27,7 +27,9 @@
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN292MTkwb2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" alt="Rainbow Line Divider" />
+</p>
 
 <h3>My GitHub Stats</h3>
 <p>
@@ -37,11 +39,17 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9" alt="Activity Graph" />
 </p>
 
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" alt="Waving Cat" width="100"/>
+  <br>
+  <b>Thanks for visiting!</b>
+</p>
+
 </td>
 <td width="30%" valign="top">
 
 <p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODY2eXQ1aWszc2tzcjF3dWo4cXcydzU3MHZkZWRyeW1yb2YwamxzNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7iqcnYgC6KX6eMxLNy/giphy.gif" alt="Waving Bear" width="150"/>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTdzd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" alt="Peeking Cat" width="150"/>
 </p>
 
 <h3 align="center">Connect With Me:</h3>
