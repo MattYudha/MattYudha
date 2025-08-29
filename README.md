@@ -30,6 +30,15 @@
 ### 🐙 GitHub Official Theme
 ![GitHub Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg)
 
+### 🔥 Fire Lava Theme
+![Fire Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-fire-dark.svg)
+
+### 🌌 Purple Galaxy Theme
+![Galaxy Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-galaxy-dark.svg)
+
+### ⚫ Minimalist Theme
+![Minimalist Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal-dark.svg)
+
 </div>
 
 <table width="100%">
@@ -60,7 +69,10 @@ const matt = {
     "🌅 Sunset Gradient",
     "🔋 Matrix Green",
     "🏳️‍🌈 Rainbow Pride",
-    "🐙 GitHub Official"
+    "🐙 GitHub Official",
+    "🔥 Fire Lava",
+    "🌌 Purple Galaxy", 
+    "⚫ Minimalist"
   ]
 }
 ```
@@ -168,6 +180,12 @@ const matt = {
 | 🌈 **Neon Cyberpunk** | Futuristic glowing effects | Dark mode profiles |
 | 🌊 **Ocean Blue** | Calm, professional waves | Corporate presentations |
 | 🌅 **Sunset Gradient** | Warm, inviting colors | Creative portfolios |
+| 🔋 **Matrix Green** | Digital, tech-inspired | Developer profiles |
+| 🏳️‍🌈 **Rainbow Pride** | Colorful, inclusive | Diversity & inclusion |
+| 🐙 **GitHub Official** | Classic GitHub colors | Traditional look |
+| 🔥 **Fire Lava** | Hot fiery colors | Gaming profiles |
+| 🌌 **Purple Galaxy** | Mystical space theme | Creative artists |
+| ⚫ **Minimalist** | Clean black & white | Professional look |🌅 **Sunset Gradient** | Warm, inviting colors | Creative portfolios |
 | 🔋 **Matrix Green** | Digital, tech-inspired | Developer profiles |
 | 🏳️‍🌈 **Rainbow Pride** | Colorful, inclusive | Diversity & inclusion |
 | 🐙 **GitHub Official** | Classic GitHub colors | Traditional look |
