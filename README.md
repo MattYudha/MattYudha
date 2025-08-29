@@ -118,17 +118,21 @@ const matt = {
 <table width="100%">
   <tr>
     <td width="50%">
+      <!-- GitHub Stats -->
       <img src="https://github-readme-stats.vercel.app/api?username=MattYudha&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&custom_title=Matt's%20GitHub%20Stats" alt="GitHub Stats" width="100%"/>
     </td>
     <td width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=MattYudha&theme=tokyonight&hide_border=true&border_radius=10&layout=compact&custom_title=Weekly%20Coding%20Activity" alt="Wakatime Stats" width="100%"/>
+      <!-- Top Languages -->
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MattYudha&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="Top Languages" width="100%"/>
     </td>
   </tr>
 </table>
 
 <div align="center">
+  <!-- Contribution Graph -->
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9&point=ffffff&border_radius=10&custom_title=Matt's%20Contribution%20Graph" alt="Activity Graph" width="100%"/>
 </div>
+
 
 ## 🎮 Interactive Snake Animation Themes
 
