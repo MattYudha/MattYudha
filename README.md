@@ -142,7 +142,11 @@ const matt = {
 <div align="center">
 
 ### 📌 Featured Repositories
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MattYudha&repo=Floodzy&theme=tokyonight&hide_border=true&border_radius=10)](https://github.com/MattYudha/Floodzy)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MattYudha&repo=Company-Profile-PT-Emran-Ghani-Asahi&theme=tokyonight&hide_border=true&border_radius=10)](https://github.com/MattYudha/Company-Profile-PT-Emran-Ghani-Asahi)
+
 
 
 ### 💼 Professional Stats
