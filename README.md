@@ -113,25 +113,22 @@ const matt = {
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
 </div>
 
+
 ## 📈 GitHub Analytics & Statistics
 
-<table width="100%">
-  <tr>
-    <td width="50%">
-      <!-- GitHub Stats -->
-      <img src="https://github-readme-stats.vercel.app/api?username=MattYudha&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&custom_title=Matt's%20GitHub%20Stats" alt="GitHub Stats" width="100%"/>
-    </td>
-    <td width="50%">
-      <!-- Top Languages -->
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MattYudha&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="Top Languages" width="100%"/>
-    </td>
-  </tr>
-</table>
-
 <div align="center">
-  <!-- Contribution Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9&point=ffffff&border_radius=10&custom_title=Matt's%20Contribution%20Graph" alt="Activity Graph" width="100%"/>
+
+<!-- GitHub Stats -->
+<img src="https://github-readme-stats.vercel.app/api?username=MattYudha&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&custom_title=Matt's%20GitHub%20Stats" alt="GitHub Stats" width="49%"/>
+
+<!-- GitHub Streak -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MattYudha&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="GitHub Streak" width="49%"/>
+
+<!-- Contribution Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9&point=ffffff&border_radius=10&custom_title=Matt's%20Contribution%20Graph" alt="Activity Graph" width="100%"/>
+
 </div>
+
 
 
 ## 🎮 Interactive Snake Animation Themes
