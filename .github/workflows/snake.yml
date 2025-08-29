@@ -1,34 +1,294 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
-name: Generate Snake
+# 🐍 Advanced GitHub Snake Animation Generator
+# Creates multiple themed snake animations with modern styling
+name: 🚀 Generate Advanced Snake Animations
 
 on:
+  # Auto-run every 8 hours for more frequent updates
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */8 * * *"
+  
+  # Manual trigger
   workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: 'Force regenerate all animations'
+        required: false
+        default: 'false'
+        type: boolean
+  
+  # Trigger on push to main
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
+    paths-ignore:
+      - 'README.md'
+      - 'docs/**'
 
 jobs:
-  generate:
+  generate-snakes:
     permissions:
       contents: write
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: "neon-cyberpunk"
+            theme: "cyberpunk"
+          - name: "ocean-blue"
+            theme: "ocean"
+          - name: "sunset-gradient"
+            theme: "sunset"
+          - name: "matrix-green"
+            theme: "matrix"
 
     steps:
-      - name: generate github-contribution-grid-snake (SVG + GIF)
-        uses: Platane/snk@v3
+      - name: 🏗️ Checkout Repository
+        uses: actions/checkout@v4
+
+      # Generate Neon Cyberpunk Theme
+      - name: 🌈 Generate Neon Cyberpunk Snake
+        if: matrix.name == 'neon-cyberpunk'
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=blue&color_dots=%23bfd6f6,%238dbdff,%2364a1f4,%234b91f1,%233c7dd9
+            dist/snake-neon-cyberpunk.svg?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff&animation_type=pulse&background_pattern=grid
+            dist/snake-neon-cyberpunk-dark.svg?palette=github-dark&color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff&animation_type=glow
+            dist/snake-neon-cyberpunk.gif?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
 
-      - name: push github-contribution-grid-snake to the output branch
+      # Generate Ocean Blue Theme
+      - name: 🌊 Generate Ocean Blue Snake
+        if: matrix.name == 'ocean-blue'
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-ocean-blue.svg?color_snake=%23004d7a&color_dots=%23e6f3ff,%23b3d9ff,%2366b3ff,%230080ff,%23004d7a&animation_type=wave
+            dist/snake-ocean-blue-dark.svg?palette=github-dark&color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
+            dist/snake-ocean-blue.gif?color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
+
+      # Generate Sunset Gradient Theme
+      - name: 🌅 Generate Sunset Gradient Snake
+        if: matrix.name == 'sunset-gradient'
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-sunset.svg?color_snake=%23ff4500&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222&animation_type=gradient
+            dist/snake-sunset-dark.svg?palette=github-dark&color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
+            dist/snake-sunset.gif?color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
+
+      # Generate Matrix Green Theme
+      - name: 🔋 Generate Matrix Green Snake
+        if: matrix.name == 'matrix-green'
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-matrix.svg?color_snake=%2300ff00&color_dots=%23003300,%23006600,%23009900,%2300cc00,%2300ff00&animation_type=digital
+            dist/snake-matrix-dark.svg?palette=github-dark&color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
+            dist/snake-matrix.gif?color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
+
+  generate-special-animations:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: generate-snakes
+    
+    steps:
+      - name: 🏗️ Checkout Repository
+        uses: actions/checkout@v4
+
+      # Generate Rainbow Pride Theme
+      - name: 🏳️‍🌈 Generate Rainbow Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-rainbow.svg?color_snake=%23ff0000&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
+            dist/snake-rainbow-dark.svg?palette=github-dark&color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
+            dist/snake-rainbow.gif?color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
+
+      # Generate GitHub Theme (Official Colors)
+      - name: 🐙 Generate GitHub Official Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-github.svg?color_snake=%23238636&color_dots=%23ebedf0,%239be9a8,%2340c463,%2330a14e,%23216e39
+            dist/snake-github-dark.svg?palette=github-dark&color_snake=%2339d353&color_dots=%23161b22,%230d1117,%23006d32,%2326a641,%2339d353
+            dist/snake-github.gif?color_snake=%2339d353&color_dots=%23161b22,%230d1117,%23006d32,%2326a641,%2339d353
+
+      # Generate Minimalist Black & White
+      - name: ⚫ Generate Minimalist Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-minimal.svg?color_snake=%23000000&color_dots=%23ffffff,%23cccccc,%23999999,%23666666,%23000000
+            dist/snake-minimal-dark.svg?palette=github-dark&color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
+            dist/snake-minimal.gif?color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
+
+  deploy-animations:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    needs: [generate-snakes, generate-special-animations]
+    timeout-minutes: 10
+    
+    steps:
+      - name: 🏗️ Checkout Repository
+        uses: actions/checkout@v4
+
+      # Download all artifacts from previous jobs
+      - name: 📥 Download Snake Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist/
+
+      # Create index.html for preview
+      - name: 📄 Generate Animation Gallery
+        run: |
+          mkdir -p dist
+          cat > dist/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>🐍 MattYudha's Snake Animation Gallery</title>
+              <style>
+                  * { margin: 0; padding: 0; box-sizing: border-box; }
+                  body {
+                      background: linear-gradient(135deg, #0d1117, #161b22);
+                      color: #f0f6fc;
+                      font-family: 'Segoe UI', system-ui, sans-serif;
+                      padding: 2rem;
+                  }
+                  .container { max-width: 1200px; margin: 0 auto; }
+                  h1 {
+                      text-align: center;
+                      font-size: 3rem;
+                      margin-bottom: 2rem;
+                      background: linear-gradient(45deg, #58a6ff, #39d353);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      text-shadow: 0 0 30px rgba(88, 166, 255, 0.5);
+                  }
+                  .gallery {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                      gap: 2rem;
+                      margin-top: 2rem;
+                  }
+                  .snake-card {
+                      background: rgba(22, 27, 34, 0.8);
+                      border-radius: 15px;
+                      padding: 1.5rem;
+                      border: 1px solid rgba(48, 54, 61, 0.5);
+                      backdrop-filter: blur(10px);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  }
+                  .snake-card:hover {
+                      transform: translateY(-10px);
+                      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                  }
+                  .snake-title {
+                      font-size: 1.5rem;
+                      margin-bottom: 1rem;
+                      text-align: center;
+                      color: #58a6ff;
+                  }
+                  .snake-img {
+                      width: 100%;
+                      border-radius: 10px;
+                      background: #0d1117;
+                      padding: 1rem;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>🐍 Snake Animation Gallery</h1>
+                  <div class="gallery">
+                      <div class="snake-card">
+                          <h3 class="snake-title">🌈 Neon Cyberpunk</h3>
+                          <img src="snake-neon-cyberpunk-dark.svg" alt="Neon Cyberpunk Snake" class="snake-img">
+                      </div>
+                      <div class="snake-card">
+                          <h3 class="snake-title">🌊 Ocean Blue</h3>
+                          <img src="snake-ocean-blue-dark.svg" alt="Ocean Blue Snake" class="snake-img">
+                      </div>
+                      <div class="snake-card">
+                          <h3 class="snake-title">🌅 Sunset Gradient</h3>
+                          <img src="snake-sunset-dark.svg" alt="Sunset Snake" class="snake-img">
+                      </div>
+                      <div class="snake-card">
+                          <h3 class="snake-title">🔋 Matrix Green</h3>
+                          <img src="snake-matrix-dark.svg" alt="Matrix Snake" class="snake-img">
+                      </div>
+                      <div class="snake-card">
+                          <h3 class="snake-title">🏳️‍🌈 Rainbow Pride</h3>
+                          <img src="snake-rainbow-dark.svg" alt="Rainbow Snake" class="snake-img">
+                      </div>
+                      <div class="snake-card">
+                          <h3 class="snake-title">🐙 GitHub Official</h3>
+                          <img src="snake-github-dark.svg" alt="GitHub Snake" class="snake-img">
+                      </div>
+                  </div>
+              </div>
+          </body>
+          </html>
+          EOF
+
+      # Deploy to GitHub Pages
+      - name: 🚀 Deploy Snake Animations
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "🐍 Update snake animations [skip ci]"
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Create release with animations
+      - name: 🏷️ Create Release
+        uses: softprops/action-gh-release@v1
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: snake-v${{ github.run_number }}
+          name: "🐍 Snake Animations v${{ github.run_number }}"
+          body: |
+            ## 🚀 New Snake Animation Release!
+            
+            This release includes multiple themed snake animations:
+            - 🌈 **Neon Cyberpunk** - Futuristic glowing theme
+            - 🌊 **Ocean Blue** - Calm ocean waves theme  
+            - 🌅 **Sunset Gradient** - Warm sunset colors
+            - 🔋 **Matrix Green** - Digital matrix style
+            - 🏳️‍🌈 **Rainbow Pride** - Colorful rainbow theme
+            - 🐙 **GitHub Official** - Official GitHub colors
+            - ⚫ **Minimalist** - Clean black & white
+            
+            ### 🎯 Usage in README:
+            ```markdown
+            ![Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg)
+            ```
+            
+            **Generated:** ${{ github.event.head_commit.timestamp }}
+            **Commit:** ${{ github.sha }}
+          files: |
+            dist/*.svg
+            dist/*.gif
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
