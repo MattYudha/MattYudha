@@ -142,7 +142,8 @@ const matt = {
 <div align="center">
 
 ### 📌 Featured Repositories
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MattYudha&repo=REPOSITORY_NAME&theme=tokyonight&hide_border=true&border_radius=10)](https://github.com/MattYudha/REPOSITORY_NAME)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MattYudha&repo=Floodzy&theme=tokyonight&hide_border=true&border_radius=10)](https://github.com/MattYudha/Floodzy)
+
 
 ### 💼 Professional Stats
 ![Profile Views](https://komarev.com/ghpvc/?username=MattYudha&style=for-the-badge&color=brightgreen&label=Profile+Views)
