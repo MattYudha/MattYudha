@@ -33,17 +33,6 @@ const matt = {
     cloud: ["AWS", "GCP", "Docker", "Kubernetes"],
     other: ["C#", "Lua", "Git", "Linux"]
   },
-  snakeThemes: [
-    "🌈 Neon Cyberpunk",
-    "🌊 Ocean Blue", 
-    "🌅 Sunset Gradient",
-    "🔋 Matrix Green",
-    "🏳️‍🌈 Rainbow Pride",
-    "🐙 GitHub Official",
-    "🔥 Fire Lava",
-    "🌌 Purple Galaxy", 
-    "⚫ Minimalist"
-  ]
 }
 ```
 
