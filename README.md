@@ -145,23 +145,6 @@ const matt = {
 
 <div align="center">
 
-| Theme | Description | Best For |
-|-------|-------------|----------|
-| 🌈 **Neon Cyberpunk** | Futuristic glowing effects | Dark mode profiles |
-| 🌊 **Ocean Blue** | Calm, professional waves | Corporate presentations |
-| 🌅 **Sunset Gradient** | Warm, inviting colors | Creative portfolios |
-| 🔋 **Matrix Green** | Digital, tech-inspired | Developer profiles |
-| 🏳️‍🌈 **Rainbow Pride** | Colorful, inclusive | Diversity & inclusion |
-| 🐙 **GitHub Official** | Classic GitHub colors | Traditional look |
-| 🔥 **Fire Lava** | Hot fiery colors | Gaming profiles |
-| 🌌 **Purple Galaxy** | Mystical space theme | Creative artists |
-| ⚫ **Minimalist** | Clean black & white | Professional look |🌅 **Sunset Gradient** | Warm, inviting colors | Creative portfolios |
-| 🔋 **Matrix Green** | Digital, tech-inspired | Developer profiles |
-| 🏳️‍🌈 **Rainbow Pride** | Colorful, inclusive | Diversity & inclusion |
-| 🐙 **GitHub Official** | Classic GitHub colors | Traditional look |
-
-### 🎯 Live Animation Gallery
-[![View All Animations](https://img.shields.io/badge/🐍_View_All_Animations-FF4081?style=for-the-badge&logoColor=white)](https://raw.githubusercontent.com/MattYudha/MattYudha/output/index.html)
 
 </div>
 
