@@ -1,127 +1,79 @@
-# 🐍 Advanced GitHub Snake Animation Generator
-# Creates multiple themed snake animations with modern styling
-name: 🚀 Generate Advanced Snake Animations
+<!-- 🐍 Multi-Themed Snake Animation Gallery -->
+<h2 id="snake-gallery">🌀 Multi-Themed Snake Animation Gallery</h2>
 
-on:
-  # Auto-run every 8 hours for more frequent updates
-  schedule:
-    - cron: "0 */8 * * *"
-  
-  # Manual trigger
-  workflow_dispatch:
-    inputs:
-      force_regenerate:
-        description: 'Force regenerate all animations'
-        required: false
-        default: 'false'
-        type: boolean
-  
-  # Trigger on push to main
-  push:
-    branches: [ "main", "master" ]
+<!-- Neon Cyberpunk -->
+<h3>🌈 Neon Cyberpunk Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk.svg" />
+  <img alt="Neon Cyberpunk Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk.svg" width="720" />
+</picture>
 
-jobs:
-  generate-advanced-snakes:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    
-    steps:
-      - name: 🏗️ Checkout Repository
-        uses: actions/checkout@v4
+<!-- Ocean Blue -->
+<h3>🌊 Ocean Blue Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-ocean-blue-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-ocean-blue.svg" />
+  <img alt="Ocean Blue Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-ocean-blue.svg" width="720" />
+</picture>
 
-      # Generate Neon Cyberpunk Theme
-      - name: 🌈 Generate Neon Cyberpunk Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-neon-cyberpunk.svg?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
-            dist/snake-neon-cyberpunk-dark.svg?palette=github-dark&color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
-            dist/snake-neon-cyberpunk.gif?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
+<!-- Sunset Gradient -->
+<h3>🌅 Sunset Gradient Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-sunset-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-sunset.svg" />
+  <img alt="Sunset Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-sunset.svg" width="720" />
+</picture>
 
-      # Generate Ocean Blue Theme  
-      - name: 🌊 Generate Ocean Blue Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-ocean-blue.svg?color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
-            dist/snake-ocean-blue-dark.svg?palette=github-dark&color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
-            dist/snake-ocean-blue.gif?color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
+<!-- Matrix Green -->
+<h3>🔋 Matrix Green Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-matrix-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-matrix.svg" />
+  <img alt="Matrix Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-matrix.svg" width="720" />
+</picture>
 
-      # Generate Sunset Gradient Theme
-      - name: 🌅 Generate Sunset Gradient Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-sunset.svg?color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
-            dist/snake-sunset-dark.svg?palette=github-dark&color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
-            dist/snake-sunset.gif?color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
+<!-- Rainbow Pride -->
+<h3>🏳️‍🌈 Rainbow Pride Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-rainbow-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-rainbow.svg" />
+  <img alt="Rainbow Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-rainbow.svg" width="720" />
+</picture>
 
-      # Generate Matrix Green Theme
-      - name: 🔋 Generate Matrix Green Snake  
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-matrix.svg?color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
-            dist/snake-matrix-dark.svg?palette=github-dark&color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
-            dist/snake-matrix.gif?color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
+<!-- GitHub Official -->
+<h3>🐙 GitHub Official Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github.svg" />
+  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github.svg" width="720" />
+</picture>
 
-      # Generate Rainbow Pride Theme
-      - name: 🏳️‍🌈 Generate Rainbow Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-rainbow.svg?color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
-            dist/snake-rainbow-dark.svg?palette=github-dark&color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
-            dist/snake-rainbow.gif?color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
+<!-- Minimalist -->
+<h3>⚫ Minimalist Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal.svg" />
+  <img alt="Minimalist Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal.svg" width="720" />
+</picture>
 
-      # Generate GitHub Theme (Official Colors)
-      - name: 🐙 Generate GitHub Official Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-github.svg?color_snake=%2339d353&color_dots=%23ebedf0,%239be9a8,%2340c463,%2330a14e,%23216e39
-            dist/snake-github-dark.svg?palette=github-dark&color_snake=%2339d353&color_dots=%23161b22,%230d1117,%23006d32,%2326a641,%2339d353
-            dist/snake-github.gif?color_snake=%2339d353&color_dots=%23161b22,%230d1117,%23006d32,%2326a641,%2339d353
+<!-- Optional: Fire & Galaxy (aktifkan kalau file-nya memang digenerate) -->
+<!--
+<h3>🔥 Fire Lava Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-fire-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-fire.svg" />
+  <img alt="Fire Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-fire.svg" width="720" />
+</picture>
 
-      # Generate Minimalist Black & White
-      - name: ⚫ Generate Minimalist Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-minimal.svg?color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
-            dist/snake-minimal-dark.svg?palette=github-dark&color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
-            dist/snake-minimal.gif?color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
+<h3>🪐 Purple Galaxy Theme</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-galaxy-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-galaxy.svg" />
+  <img alt="Galaxy Snake" src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-galaxy.svg" width="720" />
+</picture>
+-->
 
-      # Generate Fire/Lava Theme
-      - name: 🔥 Generate Fire Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-fire.svg?color_snake=%23ff4500&color_dots=%23800000,%23cc0000,%23ff6600,%23ff9900,%23ffcc00
-            dist/snake-fire-dark.svg?palette=github-dark&color_snake=%23ff4500&color_dots=%23800000,%23cc0000,%23ff6600,%23ff9900,%23ffcc00
-            dist/snake-fire.gif?color_snake=%23ff4500&color_dots=%23800000,%23cc0000,%23ff6600,%23ff9900,%23ffcc00
-
-      # Generate Purple Galaxy Theme
-      - name: 🌌 Generate Galaxy Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: MattYudha
-          outputs: |
-            dist/snake-galaxy.svg?color_snake=%238a2be2&color_dots=%23191970,%23483d8b,%23663399,%239932cc,%23ba55d3
-            dist/snake-galaxy-dark.svg?palette=github-dark&color_snake=%238a2be2&color_dots=%23191970,%23483d8b,%23663399,%239932cc,%23ba55d3
-            dist/snake-galaxy.gif?color_snake=%238a2be2&color_dots=%23191970,%23483d8b,%23663399,%239932cc,%23ba55d3
-
-      # Create enhanced index.html gallery
       - name: 📄 Generate Animation Gallery
         run: |
           mkdir -p dist
@@ -460,3 +412,4 @@ jobs:
           keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
