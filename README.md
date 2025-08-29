@@ -11,26 +11,68 @@
 <div align="center">
   
 
+<div align="center">
+  <h2>🚀 About Me</h2>
+  <p><em>Full Stack Developer from Indonesia 🇮🇩</em></p>
 </div>
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
+<table width="100%" cellspacing="0" cellpadding="6">
+  <tr>
+    <!-- Kolom Kiri -->
+    <td width="50%" valign="top">
 
-🚀 About Me
-const matt = {
-  pronouns: "he/him",
-  location: "Indonesia 🇮🇩",
-  currentFocus: "Full Stack Development",
-  funFact: "I debug with console.log and I'm proud of it! 😄",
-  askMeAbout: ["Web Dev", "Mobile Apps", "Data Science"],
-  technologies: {
-    frontend: ["React", "HTML5", "CSS3", "JavaScript"],
-    backend: ["PHP", "Laravel", "Python", "Go"],
-    mobile: ["Dart", "Flutter"],
-    other: ["C#", "Lua"]
-  }
-}
+      <h3>👋 Halo, aku Matt</h3>
+
+      <ul>
+        <li>👤 <b>Pronouns:</b> he/him</li>
+        <li>📍 <b>Location:</b> Indonesia 🇮🇩</li>
+        <li>🎯 <b>Current Focus:</b> Full Stack Development</li>
+        <li>🤹 <b>Fun Fact:</b> I debug with <code>console.log</code> and I'm proud of it! 😄</li>
+        <li>🗣️ <b>Ask Me About:</b> Web Dev, Mobile Apps, Data Science</li>
+      </ul>
+
+      <h4>🛠️ Tech Stack</h4>
+      <p>
+        <b>Frontend:</b>
+        <kbd>React</kbd> <kbd>HTML5</kbd> <kbd>CSS3</kbd> <kbd>JavaScript</kbd>
+      </p>
+      <p>
+        <b>Backend:</b>
+        <kbd>PHP</kbd> <kbd>Laravel</kbd> <kbd>Python</kbd> <kbd>Go</kbd>
+      </p>
+      <p>
+        <b>Mobile:</b>
+        <kbd>Dart</kbd> <kbd>Flutter</kbd>
+      </p>
+      <p>
+        <b>Other:</b>
+        <kbd>C#</kbd> <kbd>Lua</kbd>
+      </p>
+
+    </td>
+
+    <!-- Kolom Kanan -->
+    <td width="50%" valign="top">
+
+      <h3>🧩 Object Snapshot</h3>
+      <pre><code>const matt = {
+  pronouns: "he/him",
+  location: "Indonesia 🇮🇩",
+  currentFocus: "Full Stack Development",
+  funFact: "I debug with console.log and I'm proud of it! 😄",
+  askMeAbout: ["Web Dev", "Mobile Apps", "Data Science"],
+  technologies: {
+    frontend: ["React", "HTML5", "CSS3", "JavaScript"],
+    backend: ["PHP", "Laravel", "Python", "Go"],
+    mobile: ["Dart", "Flutter"],
+    other: ["C#", "Lua"]
+  }
+};</code></pre>
+
+    </td>
+  </tr>
+</table>
+
 
 🛠️ Tech Stack
 💻 Languages
