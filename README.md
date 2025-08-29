@@ -121,13 +121,15 @@ const matt = {
 <!-- GitHub Stats -->
 <img src="https://github-readme-stats.vercel.app/api?username=MattYudha&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&custom_title=Matt's%20GitHub%20Stats" alt="GitHub Stats" width="49%"/>
 
-<!-- GitHub Streak -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MattYudha&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="GitHub Streak" width="49%"/>
+<!-- GitHub Trophies -->
+<img src="https://github-profile-trophy.vercel.app/?username=MattYudha&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=3" alt="GitHub Trophies" width="49%"/>
 
 <!-- Contribution Graph -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9&point=ffffff&border_radius=10&custom_title=Matt's%20Contribution%20Graph" alt="Activity Graph" width="100%"/>
 
 </div>
+
+
 
 
 
