@@ -8,36 +8,6 @@
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
 </div>
 
-## 🐍 Multi-Themed Snake Animation Gallery
-
-<div align="center">
-  
-### 🌈 Neon Cyberpunk Theme
-![Neon Cyberpunk Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg)
-
-### 🌊 Ocean Blue Theme  
-![Ocean Blue Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-ocean-blue-dark.svg)
-
-### 🌅 Sunset Gradient Theme
-![Sunset Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-sunset-dark.svg)
-
-### 🔋 Matrix Green Theme
-![Matrix Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-matrix-dark.svg)
-
-### 🏳️‍🌈 Rainbow Pride Theme
-![Rainbow Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-rainbow-dark.svg)
-
-### 🐙 GitHub Official Theme
-![GitHub Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg)
-
-### 🔥 Fire Lava Theme
-![Fire Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-fire-dark.svg)
-
-### 🌌 Purple Galaxy Theme
-![Galaxy Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-galaxy-dark.svg)
-
-### ⚫ Minimalist Theme
-![Minimalist Snake](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal-dark.svg)
 
 </div>
 
