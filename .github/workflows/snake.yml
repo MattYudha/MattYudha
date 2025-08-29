@@ -19,143 +19,109 @@ on:
   # Trigger on push to main
   push:
     branches: [ "main", "master" ]
-    paths-ignore:
-      - 'README.md'
-      - 'docs/**'
 
 jobs:
-  generate-snakes:
+  generate-advanced-snakes:
     permissions:
       contents: write
-      pages: write
-      id-token: write
     runs-on: ubuntu-latest
     timeout-minutes: 15
     
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - name: "neon-cyberpunk"
-            theme: "cyberpunk"
-          - name: "ocean-blue"
-            theme: "ocean"
-          - name: "sunset-gradient"
-            theme: "sunset"
-          - name: "matrix-green"
-            theme: "matrix"
-
     steps:
       - name: 🏗️ Checkout Repository
         uses: actions/checkout@v4
 
       # Generate Neon Cyberpunk Theme
       - name: 🌈 Generate Neon Cyberpunk Snake
-        if: matrix.name == 'neon-cyberpunk'
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-neon-cyberpunk.svg?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff&animation_type=pulse&background_pattern=grid
-            dist/snake-neon-cyberpunk-dark.svg?palette=github-dark&color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff&animation_type=glow
+            dist/snake-neon-cyberpunk.svg?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
+            dist/snake-neon-cyberpunk-dark.svg?palette=github-dark&color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
             dist/snake-neon-cyberpunk.gif?color_snake=%23ff00ff&color_dots=%23ff00ff,%23ff3399,%23ff6633,%23ffff00,%2300ffff
 
-      # Generate Ocean Blue Theme
+      # Generate Ocean Blue Theme  
       - name: 🌊 Generate Ocean Blue Snake
-        if: matrix.name == 'ocean-blue'
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-ocean-blue.svg?color_snake=%23004d7a&color_dots=%23e6f3ff,%23b3d9ff,%2366b3ff,%230080ff,%23004d7a&animation_type=wave
+            dist/snake-ocean-blue.svg?color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
             dist/snake-ocean-blue-dark.svg?palette=github-dark&color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
             dist/snake-ocean-blue.gif?color_snake=%230099ff&color_dots=%23004d7a,%230066cc,%230080ff,%2333a3ff,%2366b3ff
 
       # Generate Sunset Gradient Theme
       - name: 🌅 Generate Sunset Gradient Snake
-        if: matrix.name == 'sunset-gradient'
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-sunset.svg?color_snake=%23ff4500&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222&animation_type=gradient
+            dist/snake-sunset.svg?color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
             dist/snake-sunset-dark.svg?palette=github-dark&color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
             dist/snake-sunset.gif?color_snake=%23ff6347&color_dots=%23ffebcd,%23ffa500,%23ff6347,%23dc143c,%23b22222
 
       # Generate Matrix Green Theme
-      - name: 🔋 Generate Matrix Green Snake
-        if: matrix.name == 'matrix-green'
-        uses: Platane/snk/svg-only@v3
+      - name: 🔋 Generate Matrix Green Snake  
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-matrix.svg?color_snake=%2300ff00&color_dots=%23003300,%23006600,%23009900,%2300cc00,%2300ff00&animation_type=digital
+            dist/snake-matrix.svg?color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
             dist/snake-matrix-dark.svg?palette=github-dark&color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
             dist/snake-matrix.gif?color_snake=%2300ff41&color_dots=%23003300,%23004d00,%23006600,%23008f11,%2300ff41
 
-  generate-special-animations:
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    needs: generate-snakes
-    
-    steps:
-      - name: 🏗️ Checkout Repository
-        uses: actions/checkout@v4
-
       # Generate Rainbow Pride Theme
       - name: 🏳️‍🌈 Generate Rainbow Snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-rainbow.svg?color_snake=%23ff0000&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
+            dist/snake-rainbow.svg?color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
             dist/snake-rainbow-dark.svg?palette=github-dark&color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
             dist/snake-rainbow.gif?color_snake=%23ff4080&color_dots=%23ff0000,%23ff8000,%23ffff00,%2300ff00,%230080ff,%234000ff,%238000ff
 
       # Generate GitHub Theme (Official Colors)
       - name: 🐙 Generate GitHub Official Snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-github.svg?color_snake=%23238636&color_dots=%23ebedf0,%239be9a8,%2340c463,%2330a14e,%23216e39
+            dist/snake-github.svg?color_snake=%2339d353&color_dots=%23ebedf0,%239be9a8,%2340c463,%2330a14e,%23216e39
             dist/snake-github-dark.svg?palette=github-dark&color_snake=%2339d353&color_dots=%23161b22,%230d1117,%23006d32,%2326a641,%2339d353
             dist/snake-github.gif?color_snake=%2339d353&color_dots=%23161b22,%230d1117,%23006d32,%2326a641,%2339d353
 
       # Generate Minimalist Black & White
       - name: ⚫ Generate Minimalist Snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: MattYudha
           outputs: |
-            dist/snake-minimal.svg?color_snake=%23000000&color_dots=%23ffffff,%23cccccc,%23999999,%23666666,%23000000
+            dist/snake-minimal.svg?color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
             dist/snake-minimal-dark.svg?palette=github-dark&color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
             dist/snake-minimal.gif?color_snake=%23ffffff&color_dots=%23000000,%23333333,%23666666,%23999999,%23ffffff
 
-  deploy-animations:
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-    runs-on: ubuntu-latest
-    needs: [generate-snakes, generate-special-animations]
-    timeout-minutes: 10
-    
-    steps:
-      - name: 🏗️ Checkout Repository
-        uses: actions/checkout@v4
-
-      # Download all artifacts from previous jobs
-      - name: 📥 Download Snake Artifacts
-        uses: actions/download-artifact@v4
+      # Generate Fire/Lava Theme
+      - name: 🔥 Generate Fire Snake
+        uses: Platane/snk@v3
         with:
-          path: dist/
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-fire.svg?color_snake=%23ff4500&color_dots=%23800000,%23cc0000,%23ff6600,%23ff9900,%23ffcc00
+            dist/snake-fire-dark.svg?palette=github-dark&color_snake=%23ff4500&color_dots=%23800000,%23cc0000,%23ff6600,%23ff9900,%23ffcc00
+            dist/snake-fire.gif?color_snake=%23ff4500&color_dots=%23800000,%23cc0000,%23ff6600,%23ff9900,%23ffcc00
 
-      # Create index.html for preview
+      # Generate Purple Galaxy Theme
+      - name: 🌌 Generate Galaxy Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: MattYudha
+          outputs: |
+            dist/snake-galaxy.svg?color_snake=%238a2be2&color_dots=%23191970,%23483d8b,%23663399,%239932cc,%23ba55d3
+            dist/snake-galaxy-dark.svg?palette=github-dark&color_snake=%238a2be2&color_dots=%23191970,%23483d8b,%23663399,%239932cc,%23ba55d3
+            dist/snake-galaxy.gif?color_snake=%238a2be2&color_dots=%23191970,%23483d8b,%23663399,%239932cc,%23ba55d3
+
+      # Create enhanced index.html gallery
       - name: 📄 Generate Animation Gallery
         run: |
           mkdir -p dist
@@ -169,83 +135,317 @@ jobs:
               <style>
                   * { margin: 0; padding: 0; box-sizing: border-box; }
                   body {
-                      background: linear-gradient(135deg, #0d1117, #161b22);
+                      background: linear-gradient(135deg, #0d1117, #161b22, #21262d);
                       color: #f0f6fc;
-                      font-family: 'Segoe UI', system-ui, sans-serif;
+                      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
                       padding: 2rem;
+                      min-height: 100vh;
+                      animation: backgroundShift 10s ease-in-out infinite;
                   }
-                  .container { max-width: 1200px; margin: 0 auto; }
-                  h1 {
+                  @keyframes backgroundShift {
+                      0%, 100% { background: linear-gradient(135deg, #0d1117, #161b22, #21262d); }
+                      50% { background: linear-gradient(135deg, #161b22, #21262d, #30363d); }
+                  }
+                  .container { max-width: 1400px; margin: 0 auto; }
+                  .header {
                       text-align: center;
-                      font-size: 3rem;
-                      margin-bottom: 2rem;
-                      background: linear-gradient(45deg, #58a6ff, #39d353);
+                      margin-bottom: 3rem;
+                      position: relative;
+                  }
+                  .header::before {
+                      content: '';
+                      position: absolute;
+                      top: -20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: 100px;
+                      height: 4px;
+                      background: linear-gradient(90deg, #58a6ff, #39d353, #f85149);
+                      border-radius: 2px;
+                      animation: headerGlow 2s ease-in-out infinite alternate;
+                  }
+                  @keyframes headerGlow {
+                      0% { box-shadow: 0 0 10px rgba(88, 166, 255, 0.5); }
+                      100% { box-shadow: 0 0 20px rgba(88, 166, 255, 1); }
+                  }
+                  h1 {
+                      font-size: clamp(2rem, 5vw, 4rem);
+                      margin: 2rem 0;
+                      background: linear-gradient(45deg, #58a6ff, #39d353, #f85149, #ffab70);
+                      background-size: 300% 300%;
                       -webkit-background-clip: text;
                       -webkit-text-fill-color: transparent;
-                      text-shadow: 0 0 30px rgba(88, 166, 255, 0.5);
+                      background-clip: text;
+                      animation: gradientShift 3s ease-in-out infinite;
+                      filter: drop-shadow(0 0 30px rgba(88, 166, 255, 0.3));
+                  }
+                  @keyframes gradientShift {
+                      0%, 100% { background-position: 0% 50%; }
+                      50% { background-position: 100% 50%; }
+                  }
+                  .subtitle {
+                      font-size: 1.2rem;
+                      color: #8b949e;
+                      margin-bottom: 2rem;
+                      opacity: 0.8;
+                  }
+                  .stats {
+                      display: flex;
+                      justify-content: center;
+                      gap: 2rem;
+                      margin: 2rem 0;
+                      flex-wrap: wrap;
+                  }
+                  .stat {
+                      background: rgba(22, 27, 34, 0.8);
+                      padding: 1rem 2rem;
+                      border-radius: 10px;
+                      border: 1px solid rgba(48, 54, 61, 0.5);
+                      backdrop-filter: blur(10px);
+                      text-align: center;
+                  }
+                  .stat-value {
+                      font-size: 2rem;
+                      font-weight: bold;
+                      color: #39d353;
+                      display: block;
                   }
                   .gallery {
                       display: grid;
-                      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
                       gap: 2rem;
-                      margin-top: 2rem;
+                      margin-top: 3rem;
                   }
                   .snake-card {
-                      background: rgba(22, 27, 34, 0.8);
-                      border-radius: 15px;
-                      padding: 1.5rem;
+                      background: rgba(22, 27, 34, 0.9);
+                      border-radius: 20px;
+                      padding: 2rem;
                       border: 1px solid rgba(48, 54, 61, 0.5);
-                      backdrop-filter: blur(10px);
-                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      backdrop-filter: blur(15px);
+                      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                      position: relative;
+                      overflow: hidden;
+                  }
+                  .snake-card::before {
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      left: -100%;
+                      width: 100%;
+                      height: 100%;
+                      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+                      transition: left 0.5s;
+                  }
+                  .snake-card:hover::before {
+                      left: 100%;
                   }
                   .snake-card:hover {
-                      transform: translateY(-10px);
-                      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                      transform: translateY(-15px) scale(1.02);
+                      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+                      border-color: rgba(88, 166, 255, 0.3);
                   }
                   .snake-title {
-                      font-size: 1.5rem;
+                      font-size: 1.8rem;
                       margin-bottom: 1rem;
                       text-align: center;
                       color: #58a6ff;
+                      position: relative;
+                      z-index: 2;
+                  }
+                  .snake-description {
+                      color: #8b949e;
+                      text-align: center;
+                      margin-bottom: 1.5rem;
+                      font-size: 0.9rem;
+                      position: relative;
+                      z-index: 2;
                   }
                   .snake-img {
                       width: 100%;
-                      border-radius: 10px;
+                      border-radius: 15px;
                       background: #0d1117;
-                      padding: 1rem;
+                      padding: 1.5rem;
+                      position: relative;
+                      z-index: 2;
+                      transition: transform 0.3s ease;
+                  }
+                  .snake-card:hover .snake-img {
+                      transform: scale(1.05);
+                  }
+                  .download-links {
+                      margin-top: 1rem;
+                      display: flex;
+                      justify-content: center;
+                      gap: 0.5rem;
+                      position: relative;
+                      z-index: 2;
+                  }
+                  .download-btn {
+                      background: rgba(88, 166, 255, 0.1);
+                      color: #58a6ff;
+                      padding: 0.5rem 1rem;
+                      border-radius: 6px;
+                      text-decoration: none;
+                      font-size: 0.8rem;
+                      border: 1px solid rgba(88, 166, 255, 0.3);
+                      transition: all 0.3s ease;
+                  }
+                  .download-btn:hover {
+                      background: rgba(88, 166, 255, 0.2);
+                      transform: translateY(-2px);
+                  }
+                  .footer {
+                      text-align: center;
+                      margin-top: 4rem;
+                      padding: 2rem;
+                      border-top: 1px solid rgba(48, 54, 61, 0.3);
+                  }
+                  @media (max-width: 768px) {
+                      .gallery { grid-template-columns: 1fr; }
+                      .stats { flex-direction: column; align-items: center; }
                   }
               </style>
           </head>
           <body>
               <div class="container">
-                  <h1>🐍 Snake Animation Gallery</h1>
+                  <div class="header">
+                      <h1>🐍 Snake Animation Gallery</h1>
+                      <p class="subtitle">Multiple themed snake animations eating GitHub contributions</p>
+                      <div class="stats">
+                          <div class="stat">
+                              <span class="stat-value">10</span>
+                              <span>Unique Themes</span>
+                          </div>
+                          <div class="stat">
+                              <span class="stat-value">30</span>
+                              <span>Animation Files</span>
+                          </div>
+                          <div class="stat">
+                              <span class="stat-value">24/7</span>
+                              <span>Auto Updates</span>
+                          </div>
+                      </div>
+                  </div>
+                  
                   <div class="gallery">
                       <div class="snake-card">
                           <h3 class="snake-title">🌈 Neon Cyberpunk</h3>
+                          <p class="snake-description">Futuristic glowing effects with electric colors</p>
                           <img src="snake-neon-cyberpunk-dark.svg" alt="Neon Cyberpunk Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-neon-cyberpunk.svg" class="download-btn">SVG</a>
+                              <a href="snake-neon-cyberpunk-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-neon-cyberpunk.gif" class="download-btn">GIF</a>
+                          </div>
                       </div>
+                      
                       <div class="snake-card">
                           <h3 class="snake-title">🌊 Ocean Blue</h3>
+                          <p class="snake-description">Calm professional waves with blue gradients</p>
                           <img src="snake-ocean-blue-dark.svg" alt="Ocean Blue Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-ocean-blue.svg" class="download-btn">SVG</a>
+                              <a href="snake-ocean-blue-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-ocean-blue.gif" class="download-btn">GIF</a>
+                          </div>
                       </div>
+                      
                       <div class="snake-card">
                           <h3 class="snake-title">🌅 Sunset Gradient</h3>
+                          <p class="snake-description">Warm inviting colors like a beautiful sunset</p>
                           <img src="snake-sunset-dark.svg" alt="Sunset Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-sunset.svg" class="download-btn">SVG</a>
+                              <a href="snake-sunset-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-sunset.gif" class="download-btn">GIF</a>
+                          </div>
                       </div>
+                      
                       <div class="snake-card">
                           <h3 class="snake-title">🔋 Matrix Green</h3>
+                          <p class="snake-description">Digital tech-inspired green matrix style</p>
                           <img src="snake-matrix-dark.svg" alt="Matrix Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-matrix.svg" class="download-btn">SVG</a>
+                              <a href="snake-matrix-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-matrix.gif" class="download-btn">GIF</a>
+                          </div>
                       </div>
+                      
                       <div class="snake-card">
                           <h3 class="snake-title">🏳️‍🌈 Rainbow Pride</h3>
+                          <p class="snake-description">Colorful rainbow representing diversity</p>
                           <img src="snake-rainbow-dark.svg" alt="Rainbow Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-rainbow.svg" class="download-btn">SVG</a>
+                              <a href="snake-rainbow-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-rainbow.gif" class="download-btn">GIF</a>
+                          </div>
                       </div>
+                      
                       <div class="snake-card">
                           <h3 class="snake-title">🐙 GitHub Official</h3>
+                          <p class="snake-description">Classic GitHub contribution colors</p>
                           <img src="snake-github-dark.svg" alt="GitHub Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-github.svg" class="download-btn">SVG</a>
+                              <a href="snake-github-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-github.gif" class="download-btn">GIF</a>
+                          </div>
+                      </div>
+                      
+                      <div class="snake-card">
+                          <h3 class="snake-title">⚫ Minimalist</h3>
+                          <p class="snake-description">Clean black and white design</p>
+                          <img src="snake-minimal-dark.svg" alt="Minimalist Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-minimal.svg" class="download-btn">SVG</a>
+                              <a href="snake-minimal-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-minimal.gif" class="download-btn">GIF</a>
+                          </div>
+                      </div>
+                      
+                      <div class="snake-card">
+                          <h3 class="snake-title">🔥 Fire Lava</h3>
+                          <p class="snake-description">Hot fiery colors with lava effect</p>
+                          <img src="snake-fire-dark.svg" alt="Fire Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-fire.svg" class="download-btn">SVG</a>
+                              <a href="snake-fire-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-fire.gif" class="download-btn">GIF</a>
+                          </div>
+                      </div>
+                      
+                      <div class="snake-card">
+                          <h3 class="snake-title">🌌 Purple Galaxy</h3>
+                          <p class="snake-description">Mystical galaxy colors with purple theme</p>
+                          <img src="snake-galaxy-dark.svg" alt="Galaxy Snake" class="snake-img">
+                          <div class="download-links">
+                              <a href="snake-galaxy.svg" class="download-btn">SVG</a>
+                              <a href="snake-galaxy-dark.svg" class="download-btn">Dark SVG</a>
+                              <a href="snake-galaxy.gif" class="download-btn">GIF</a>
+                          </div>
                       </div>
                   </div>
+                  
+                  <div class="footer">
+                      <p>🚀 Generated automatically every 8 hours</p>
+                      <p>⭐ Star this repo if you like these animations!</p>
+                  </div>
               </div>
+              
+              <script>
+                  // Add some interactive effects
+                  document.querySelectorAll('.snake-card').forEach(card => {
+                      card.addEventListener('mouseenter', () => {
+                          card.style.transform = 'translateY(-15px) scale(1.02)';
+                      });
+                      
+                      card.addEventListener('mouseleave', () => {
+                          card.style.transform = 'translateY(0) scale(1)';
+                      });
+                  });
+              </script>
           </body>
           </html>
           EOF
@@ -258,37 +458,5 @@ jobs:
           build_dir: dist
           commit_message: "🐍 Update snake animations [skip ci]"
           keep_history: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Create release with animations
-      - name: 🏷️ Create Release
-        uses: softprops/action-gh-release@v1
-        if: github.ref == 'refs/heads/main'
-        with:
-          tag_name: snake-v${{ github.run_number }}
-          name: "🐍 Snake Animations v${{ github.run_number }}"
-          body: |
-            ## 🚀 New Snake Animation Release!
-            
-            This release includes multiple themed snake animations:
-            - 🌈 **Neon Cyberpunk** - Futuristic glowing theme
-            - 🌊 **Ocean Blue** - Calm ocean waves theme  
-            - 🌅 **Sunset Gradient** - Warm sunset colors
-            - 🔋 **Matrix Green** - Digital matrix style
-            - 🏳️‍🌈 **Rainbow Pride** - Colorful rainbow theme
-            - 🐙 **GitHub Official** - Official GitHub colors
-            - ⚫ **Minimalist** - Clean black & white
-            
-            ### 🎯 Usage in README:
-            ```markdown
-            ![Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg)
-            ```
-            
-            **Generated:** ${{ github.event.head_commit.timestamp }}
-            **Commit:** ${{ github.sha }}
-          files: |
-            dist/*.svg
-            dist/*.gif
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
