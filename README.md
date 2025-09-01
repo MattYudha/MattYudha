@@ -136,7 +136,7 @@ const matt = {
 
 ## 🎮 Interactive Snake Animation Themes
 
-![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-matrix-dark.svg)
+![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg)
 
 <div align="center">
 
