@@ -1,6 +1,4 @@
-![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg)
 
-![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-ocean-blue-dark.svg)
 
 
 # <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTczd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="50" height="50" /> Hi there, I'm Matt! <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" width="40" height="40" />
@@ -135,7 +133,7 @@ const matt = {
 </div>
 
 
-
+![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-sunset-dark.svg)
 
 
 ## 🎮 Interactive Snake Animation Themes
