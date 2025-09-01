@@ -131,8 +131,6 @@ const matt = {
 📌 Featured Repositories
 💼 Professional Stats
 </div>
-
-```
 🏆 Achievements & Certifications
 <div align="center">
 graph LR
@@ -141,5 +139,4 @@ graph LR
     B --> D[☁️ Cloud Architecture]
     C --> E[🚀 Current Projects]
     D --> E
-
     </div>
