@@ -132,14 +132,17 @@ const matt = {
 
 </div>
 
+## 🎮 Interactive Snake Animation Themes
+
+![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal-dark.svg)
+
+
 ## 📈 Contribution Graph
 <!-- Contribution Graph -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9&point=ffffff&border_radius=10&custom_title=Matt's%20Contribution%20Graph" alt="Activity Graph" width="100%"/>
 
 
-## 🎮 Interactive Snake Animation Themes
 
-![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-minimal-dark.svg)
 
 <div align="center">
 
