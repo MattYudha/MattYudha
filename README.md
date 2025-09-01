@@ -133,10 +133,10 @@ const matt = {
 </div>
 
 
-![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-sunset-dark.svg)
-
 
 ## 🎮 Interactive Snake Animation Themes
+
+![GitHub Snake Animation](https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-matrix-dark.svg)
 
 <div align="center">
 
