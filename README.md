@@ -1,11 +1,11 @@
-# <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTczd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="50" height="50" /> Hi there, I'm Matt! <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" width="40" height="40" />
+# <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTczd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="50" height="50" /> Hi there, I'm Matt! <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" width="40" height="40" />
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D4AA&center=true&vCenter=true&width=600&lines=A+Passionate+Developer+Turning+Ideas+into+Reality;Welcome+to+my+coding+universe!+%F0%9F%9A%80;Let's+build+something+amazing+together!;Full+Stack+%7C+Mobile+%7C+Data+Science;Always+learning%2C+always+growing!" alt="Typing SVG" />
 </p>
 
 <div align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
 </div>
 
 <table width="100%">
@@ -31,7 +31,7 @@ const matt = {
     other: ["C#", "Lua", "Git", "Linux"]
   },
 }
-```
+
 🛠️ Tech Stack
 💻 Languages & Frameworks
 <p>
@@ -40,7 +40,6 @@ const matt = {
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
 </p>
-
 <p>
 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
@@ -67,7 +66,7 @@ const matt = {
 <td width="50%" valign="top">
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTdzd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="200" style="border-radius: 10px;"/>
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTdzd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="200" style="border-radius: 10px;"/>
 <br><br>
 
 🌐 Connect With Me
@@ -86,7 +85,6 @@ const matt = {
 </a>
 </p>
 
-
 🏆 GitHub Achievements
 <p>
 <img src="https://github-profile-trophy.vercel.app/?username=MattYudha&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=3" alt="GitHub Trophies"/>
@@ -99,29 +97,24 @@ const matt = {
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MattYudha&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="GitHub Streak"/>
 
 </div>
-
 </td>
 </tr>
 </table>
 
 <div align="center">
-<img src="https://www.google.com/url?sa=E&source=gmail&q=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
 </div>
 
 📈 GitHub Analytics & Statistics
 <div align="center">
-
 <img src="https://github-readme-stats.vercel.app/api?username=MattYudha&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&custom_title=Matt's%20GitHub%20Stats" alt="GitHub Stats" width="49%"/>
-
 <img src="https://github-profile-trophy.vercel.app/?username=MattYudha&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=3" alt="GitHub Trophies" width="49%"/>
-
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MattYudha&theme=react-dark&hide_border=true&area=true&line=00b8a9&point=ffffff&border_radius=10&custom_title=Matt's%20Contribution%20Graph" alt="Activity Graph" width="100%"/>
-
 </div>
 
 🎮 Interactive Snake Animation Themes
 <div align="center">
-<img src="https://www.google.com/search?q=https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg" alt="GitHub Snake Animation" />
+<img src="https://www.google.com/url?sa=E&source=gmail&q=https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg" alt="GitHub Snake Animation" />
 <img src="https://www.google.com/search?q=https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg" alt="Neon Cyberpunk Snake Animation" />
 </div>
 
@@ -131,12 +124,16 @@ const matt = {
 📌 Featured Repositories
 💼 Professional Stats
 </div>
+
 🏆 Achievements & Certifications
 <div align="center">
+
+Cuplikan kode
+
 graph LR
     A[🎓 Computer Science] --> B[💻 Full Stack Development]
     B --> C[📱 Mobile Development]
     B --> D[☁️ Cloud Architecture]
     C --> E[🚀 Current Projects]
     D --> E
-    </div>
+</div>
