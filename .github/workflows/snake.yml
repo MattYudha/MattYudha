@@ -3,6 +3,7 @@ name: 🚀 Generate Advanced Snake Animations
 
 on:
   schedule:
+    # Runs every 8 hours
     - cron: "0 */8 * * *"
   workflow_dispatch:
   push:
@@ -12,6 +13,7 @@ on:
       - 'docs/**'
 
 jobs:
+  # Job 1: Generate a matrix of standard snake themes
   generate-snakes:
     permissions:
       contents: write
@@ -73,6 +75,7 @@ jobs:
           path: dist/*.svg
           if-no-files-found: error
 
+  # Job 2: Generate special, one-off themes
   generate-special-animations:
     permissions:
       contents: write
@@ -114,6 +117,7 @@ jobs:
           path: dist/*.svg
           if-no-files-found: error
 
+  # Job 3: Deploy all generated animations to the 'output' branch
   deploy-animations:
     permissions:
       contents: write
@@ -129,9 +133,11 @@ jobs:
         with:
           path: dist
 
+      - name: 🚚 Organize downloaded files
+        run: find dist -type f -name "*.svg" -exec mv {} dist/ \;
+
       - name: 📄 Generate Animation Gallery
         run: |
-          mkdir -p dist
           cat > dist/index.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
