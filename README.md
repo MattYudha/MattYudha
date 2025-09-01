@@ -130,6 +130,9 @@ const matt = {
 <!-- GitHub Trophies -->
 <img src="https://github-profile-trophy.vercel.app/?username=MattYudha&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=2&column=3" alt="GitHub Trophies" width="49%"/>
 
+<!-- Current Streak -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MattYudha&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="GitHub Streak"/>
+
 </div>
 
 
