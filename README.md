@@ -1,19 +1,20 @@
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTczd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="50" height="50" /> Hi there, I'm Matt! <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" width="40" height="40" />
+# <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTczd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="50" height="50" /> Hi there, I'm Matt! <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" width="40" height="40" />
+
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D4AA&center=true&vCenter=true&width=600&lines=A+Passionate+Developer+Turning+Ideas+into+Reality;Welcome+to+my+coding+universe!+%F0%9F%9A%80;Let's+build+something+amazing+together!;Full+Stack+%7C+Mobile+%7C+Data+Science;Always+learning%2C+always+growing!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D4AA&center=true&vCenter=true&width=600&lines=A+Passionate+Developer+Turning+Ideas+into+Reality;Welcome+to+my+coding+universe!+%F0%9F%9A%80;Let's+build+something+amazing+together!;Full+Stack+%7C+Mobile+%7C+Data+Science;Always+learning%2C+always+growing!" alt="Typing SVG" />
 </p>
 
 <div align="center">
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
 </div>
 
 <table width="100%">
-<tr>
-<td width="50%" valign="top">
+  <tr>
+    <td width="50%" valign="top">
 
-🚀 About Me
-TypeScript
+## 🚀 About Me
 
+```typescript
 const matt = {
   pronouns: "he/him",
   location: "Indonesia 🇮🇩",
@@ -30,6 +31,7 @@ const matt = {
     other: ["C#", "Lua", "Git", "Linux"]
   },
 }
+```
 🛠️ Tech Stack
 💻 Languages & Frameworks
 <p>
@@ -61,12 +63,11 @@ const matt = {
 <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS"/>
 <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP"/>
 </p>
-
 </td>
 <td width="50%" valign="top">
 
 <div align="center">
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTdzd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="200" style="border-radius: 10px;"/>
+<img src="https://www.google.com/search?q=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTdzd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="200" style="border-radius: 10px;"/>
 <br><br>
 
 🌐 Connect With Me
@@ -84,6 +85,7 @@ const matt = {
 <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
 </a>
 </p>
+
 
 🏆 GitHub Achievements
 <p>
@@ -103,7 +105,7 @@ const matt = {
 </table>
 
 <div align="center">
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
+<img src="https://www.google.com/url?sa=E&source=gmail&q=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmU1dWFrN282MTV0b2Fqdjd4cTlkZWFkNW55d21kcTZydGVzaHFkMSZlcD12MV9pbnRlcm5hbF_naWZ_fYnl_faWQmY3Q9Zw/PKi7juonFaTNdnuiZU/giphy.gif" width="100%" height="3" />
 </div>
 
 📈 GitHub Analytics & Statistics
@@ -119,8 +121,8 @@ const matt = {
 
 🎮 Interactive Snake Animation Themes
 <div align="center">
-<img src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg" alt="GitHub Snake Animation" />
-<img src="https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg" alt="Neon Cyberpunk Snake Animation" />
+<img src="https://www.google.com/search?q=https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-github-dark.svg" alt="GitHub Snake Animation" />
+<img src="https://www.google.com/search?q=https://raw.githubusercontent.com/MattYudha/MattYudha/output/snake-neon-cyberpunk-dark.svg" alt="Neon Cyberpunk Snake Animation" />
 </div>
 
 🚀 Recent Projects & Contributions
@@ -133,7 +135,7 @@ const matt = {
 🏆 Achievements & Certifications
 <div align="center">
 
-Cuplikan kode
+
 
 graph LR
     A[🎓 Computer Science] --> B[💻 Full Stack Development]
@@ -141,4 +143,5 @@ graph LR
     B --> D[☁️ Cloud Architecture]
     C --> E[🚀 Current Projects]
     D --> E
-</div>
+
+    </div>
