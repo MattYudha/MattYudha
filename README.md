@@ -103,8 +103,7 @@ const matt = {
 ### 📊 Top Languages
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MattYudha&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="Top Languages"/>
 
-### 🎯 Current Streak
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MattYudha&theme=tokyonight&hide_border=true&border_radius=10&card_width=400" alt="GitHub Streak"/>
+
 
 </div>
 
