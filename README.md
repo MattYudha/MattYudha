@@ -132,11 +132,9 @@ const matt = {
 💼 Professional Stats
 </div>
 
+```
 🏆 Achievements & Certifications
 <div align="center">
-
-
-
 graph LR
     A[🎓 Computer Science] --> B[💻 Full Stack Development]
     B --> C[📱 Mobile Development]
