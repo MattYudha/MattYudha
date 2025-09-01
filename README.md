@@ -163,7 +163,7 @@ const matt = {
 
 </div>
 
-## 🏆 Achievements & Certifications
+## 🏆 Tech Indicator
 
 <div align="center">
 
