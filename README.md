@@ -26,15 +26,15 @@ const matt = {
   location: "Indonesia 🇮🇩",
   currentFocus: "Full Stack Development",
   funFact: "I debug with console.log and I'm proud of it! 😄",
-  askMeAbout: ["Web Dev", "Mobile Apps", "Data Science"],
+  askMeAbout: ["Web Dev", "Mobile Apps", "Game Developer"],
   currentlyLearning: ["Go", "Microservices", "Cloud Architecture"],
   technologies: {
-    frontend: ["React", "HTML5", "CSS3", "JavaScript", "TypeScript"],
-    backend: ["PHP", "Laravel", "Python", "Go", "Node.js"],
+    frontend: ["React", "HTML5", "CSS3", "JavaScript", "TypeScript", "Next.js"],
+    backend: ["PHP", "Laravel", "Python", "Go", "Node.js", "Next.js"],
     mobile: ["Dart", "Flutter", "React Native"],
-    database: ["MySQL", "PostgreSQL", "MongoDB"],
+    database: ["MySQL", "PostgreSQL", "MongoDB", "Suppabase"],
     cloud: ["AWS", "GCP", "Docker", "Kubernetes"],
-    other: ["C#", "Lua", "Git", "Linux"]
+    other: ["C#", "Lua", "Git"]
   },
 }
 ```
