@@ -24,7 +24,7 @@
 const matt = {
   pronouns: "he/him",
   location: "Indonesia 🇮🇩",
-  currentFocus: "Full Stack Development",
+  currentFocus: "Full Stack Developer",
   funFact: "I debug with console.log and I'm proud of it! 😄",
   askMeAbout: ["Web Dev", "Mobile Apps", "Game Developer"],
   currentlyLearning: ["Go", "Microservices", "Cloud Architecture"],
