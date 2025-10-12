@@ -2,7 +2,6 @@
 
 
 # <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3dTl1eG9mODdmcm54am82cjA3MXExNTczd3NxdDd6MHo2M2NsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b0yzpWnpTUDTlWnIZe/giphy.gif" width="50" height="50" /> Hi there, I'm Matt! <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHAzb2M1ZWtscnN4MXByOTR3cGNqOHR4cjN4djJoZ3RrbHRrZWhwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxgkKEcuMYt4OpHgYU/giphy.gif" width="40" height="40" />
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D4AA&center=true&vCenter=true&width=600&lines=A+Passionate+Developer+Turning+Ideas+into+Reality;Welcome+to+my+coding+universe!+%F0%9F%9A%80;Let's+build+something+amazing+together!;Full+Stack+%7C+Mobile+%7C+Data+Science;Always+learning%2C+always+growing!" alt="Typing SVG" />
 </p>
@@ -26,7 +25,7 @@ const matt = {
   location: "Indonesia 🇮🇩",
   currentFocus: "Full Stack Developer",
   funFact: "I debug with console.log and I'm proud of it! 😄",
-  askMeAbout: ["Web Dev", "Mobile Apps", "Game Developer"],
+  askMeAbout: ["Web Dev", "Game Developer"],
   currentlyLearning: ["Go", "Microservices", "Cloud Architecture"],
   technologies: {
     frontend: ["React", "HTML5", "CSS3", "JavaScript", "TypeScript", "Next.js"],
