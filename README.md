@@ -177,4 +177,4 @@ graph LR
     B --> C[📱 Mobile Development]
     B --> D[☁️ Cloud Architecture]
     C --> E[🚀 Current Projects]
-    D --> E
+    D --> E[Web Developer]
