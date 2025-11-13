@@ -28,7 +28,7 @@ const matt = {
   askMeAbout: ["Web Dev", "Game Developer"],
   currentlyLearning: ["Go", "Microservices", "Cloud Architecture"],
   technologies: {
-    frontend: ["React", "HTML5", "CSS3", "JavaScript", "TypeScript", "Next.js"],
+    frontend: ["React", "JavaScript", "TypeScript", "Next.js"],
     backend: ["PHP", "Laravel", "Python", "Go", "Node.js", "Next.js"],
     mobile: ["Dart", "Flutter", "React Native"],
     database: ["MySQL", "PostgreSQL", "MongoDB", "Suppabase"],
