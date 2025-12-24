@@ -155,7 +155,7 @@ const matt = {
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MattYudha&repo=Floodzy&theme=tokyonight&hide_border=true&border_radius=10)](https://github.com/MattYudha/Floodzy)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MattYudha&repo=ecomere-eloco&theme=tokyonight&hide_border=true&border_radius=10)](https://github.com/MattYudha/ecomere-eloco)
+
 
 
 
