@@ -32,7 +32,7 @@ const matt = {
     backend: ["PHP", "Laravel", "Python", "Go", "Node.js", "Next.js"],
     mobile: ["Dart", "Flutter", "React Native"],
     database: ["MySQL", "PostgreSQL", "MongoDB", "Suppabase"],
-    cloud: ["AWS", "GCP", "Docker", "Kubernetes"],
+    cloud: ["AWS", "GCP", "Docker", ],
     other: ["C#", "Lua", "Git"]
   },
 }
